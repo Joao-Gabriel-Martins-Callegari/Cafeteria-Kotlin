@@ -17,3 +17,13 @@ Este projeto foi desenvolvido como parte do curso **Linguagem Backend: Ágil e E
 - [x] **Cadastro de Itens**: Adição de novos produtos com trava de segurança para evitar nomes duplicados.
 - [x] **Fluxo de Vendas**: Verificação de saldo em estoque antes de confirmar a saída de mercadorias.
 - [x] **Gestão de Reposição**: Atualização de estoque existente com integração ao fluxo de cadastro para itens não localizados.
+
+💻 Como Rodar o Projeto
+Para executar este sistema em sua máquina, você precisa ter o JDK e o compilador Kotlin instalados. Siga os comandos abaixo no seu terminal:
+
+```bash
+git clone https://github.com/SEU_USUARIO/NOME-DO-REPO.git
+cd NOME-DO-REPO
+
+kotlinc main.kt -include-runtime -d cafeteria.jar
+java -jar cafeteria.jar
