@@ -71,9 +71,22 @@ fun adicionarProduto(produtos: MutableList<MutableMap<String, Any>>){
     }
 
     print("Preço: ")
-    val preco = readln().toDoubleOrNull() ?: 0.0
+    var preco = readln().toDoubleOrNull() ?: 0.0
+
+    while(preco <= 0){
+        println("Valor Invalido, tente novamente")
+        print("Preço: ")
+        preco = readln().toDoubleOrNull() ?: 0.0
+    }
+
     print("Quantidade: ")
-    val quantidade = readln().toIntOrNull() ?: 0
+    var quantidade = readln().toIntOrNull() ?: 0
+
+    while(quantidade <= 0){
+        println("Valor Invalido, tente novamente")
+        print("Quantidade: ")
+        quantidade = readln().toIntOrNull() ?: 0
+    }
 
     val novoProduto = mutableMapOf<String, Any>(
         "nome" to nome,
@@ -101,6 +114,12 @@ fun realizarVenda(produtos: MutableList<MutableMap<String, Any>>){
     var qtdVendida = readln().toIntOrNull() ?: 0
     //Pegando a quantidade em estoque do produto
     var estoque = produto["quantidade"] as Int
+
+    while(qtdVendida <= 0){
+        println("Valor Invalido, tente novamente")
+        print("Quantas unidades foram vendidas: ")
+        qtdVendida = readln().toIntOrNull() ?: 0
+    }
 
     //Se eu tenho estoque o suficiente
     if(qtdVendida <= estoque){
