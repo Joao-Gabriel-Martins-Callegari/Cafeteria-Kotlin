@@ -23,7 +23,7 @@ Este projeto foi desenvolvido como parte do curso **Linguagem Backend: Ágil e E
 Para executar este sistema em sua máquina, você precisa ter o JDK e o compilador Kotlin instalados. Siga os comandos abaixo no seu terminal:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/NOME-DO-REPO.git
+git clone https://github.com/Joao-Gabriel-Martins-Callegari/Cafeteria-Kotlin.git
 cd NOME-DO-REPO
 
 kotlinc main.kt -include-runtime -d cafeteria.jar
