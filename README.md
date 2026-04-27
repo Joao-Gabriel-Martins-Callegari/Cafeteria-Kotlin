@@ -24,7 +24,7 @@ Para executar este sistema em sua máquina, você precisa ter o JDK e o compilad
 
 ```bash
 git clone https://github.com/Joao-Gabriel-Martins-Callegari/Cafeteria-Kotlin.git
-cd NOME-DO-REPO
+cd Cafeteria-Kotlin
 
 kotlinc main.kt -include-runtime -d cafeteria.jar
 java -jar cafeteria.jar
